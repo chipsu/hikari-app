@@ -1,0 +1,15 @@
+<h1><?=$this->encode($title)?></h1>
+<p><?=$this->encode($message)?></p>
+<?php echo $this->controller->id ?>
+
+
+<h2>Html class test</h2>
+<?php echo $this->component('html')->tag('p', ['class' => 'test'], 'Hello from Html helper'); ?>
+
+<h2>Posts</h2>
+<?php foreach($posts as $post): ?>
+
+    <h3><?php echo htmlspecialchars(date(DATE_ISO8601, $post['date']->sec)); ?></h3>
+    <p><?php echo htmlspecialchars($post['content']); ?></p>
+
+<?php endforeach; ?>
