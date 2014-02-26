@@ -4,7 +4,7 @@ namespace app\component;
 
 class HelperClass {
 
-    public function message() {
+    function message() {
         return 'hello world';
     }
 }
