@@ -27,4 +27,8 @@ class Index extends Controller {
         echo $this->html->tag('p', [], 'Hello!');
         echo $this->html->close('pre');
     }
+
+    function args($a, $b, $c = 'default') {
+        var_dump(func_get_args());
+    }
 }
