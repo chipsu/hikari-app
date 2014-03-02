@@ -4,6 +4,11 @@
     <title><?=$this->encode($title)?></title>
 </head>
 <body>
-    <?=$this->content?>
+    <header>
+        <h1><a href="<?=$this->url()?>">Home</a></h1>
+    </header>
+    <article>
+        <?=$this->content?>
+    </article>
 </body>
 </html>
