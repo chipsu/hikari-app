@@ -31,7 +31,7 @@ return [
                         'format' => '/',
                         'target' => ['app\controller\Index', 'action' => 'index'],
                     ],
-                    'testmodule' => [
+                    /*'testmodule' => [
                         'format' => [
                             '/testmodule',
                             '/testmodule/:controller/:action',
@@ -47,6 +47,14 @@ return [
                         'format' => '/testmoduleforward',
                         'target' => ['@testmoduleforward\Index', 'action' => 'index'],
                         'import' => 'testmodule',
+                    ],*/
+                    'default' => [
+                        'format' => [
+                            '/:controller/:action/:id',
+                            '/:controller/:action',
+                            '/:controller',
+                        ],
+                        'target' => ['app\controller\:Controller', 'action' => 'index', 'id' => null],
                     ],
                 ],
             ],
