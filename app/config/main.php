@@ -50,11 +50,11 @@ return [
                     ],*/
                     'default' => [
                         'format' => [
-                            '/:controller/:action/:id',
-                            '/:controller/:action',
-                            '/:controller',
+                            '/:class/:action/:id',
+                            '/:class/:action',
+                            '/:class',
                         ],
-                        'target' => ['app\controller\:Controller', 'action' => 'index', 'id' => null],
+                        'target' => ['app\controller\:Class', 'action' => 'index', 'id' => null],
                     ],
                 ],
             ],
