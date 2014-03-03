@@ -48,6 +48,11 @@ return [
                         'target' => ['@testmoduleforward\Index', 'action' => 'index'],
                         'import' => 'testmodule',
                     ],*/
+                    #'subdomain' => [
+                    #    'format' => [
+                    #        ['domain' => ':module.$domain', 'path' => '/:class/:action/:id'],
+                    #    ],
+                    #],
                     'default' => [
                         'format' => [
                             '/:class/:action/:id',
