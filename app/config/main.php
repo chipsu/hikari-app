@@ -48,11 +48,11 @@ return [
                         'target' => ['@testmoduleforward\Index', 'action' => 'index'],
                         'import' => 'testmodule',
                     ],*/
-                    #'subdomain' => [
-                    #    'format' => [
-                    #        ['domain' => ':module.$domain', 'path' => '/:class/:action/:id'],
-                    #    ],
-                    #],
+                    'bitbucket' => [
+                        'format' => [
+                            ['domain' => 'bitbucket.org', 'path' => '/:user/:repo'],
+                        ],
+                    ],
                     'default' => [
                         'format' => [
                             '/:class/:action/:id',
