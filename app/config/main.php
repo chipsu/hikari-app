@@ -50,8 +50,9 @@ return [
                     ],*/
                     'bitbucket' => [
                         'format' => [
-                            ['domain' => 'bitbucket.org', 'path' => '/:user/:repo'],
+                            ['host' => 'bitbucket.org', 'path' => '/:user/:repo'],
                         ],
+                        'target' => ['user' => 'metrica', 'repo' => 'hikari-lib'],
                     ],
                     'default' => [
                         'format' => [
