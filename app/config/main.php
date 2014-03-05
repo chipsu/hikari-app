@@ -56,7 +56,7 @@ return [
                     ],
                     'default' => [
                         'format' => [
-                            '/:class/:action/:id',
+                            '/:class/:action/:id(int)',
                             '/:class/:action',
                             '/:class',
                         ],
